@@ -55,8 +55,8 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/devggn")],
-        [Button.url("Contact Me", url="https://t.me/ggnhere")],
+        [Button.url("Join Channel", url="https://t.me/TonyStark_Botz")],
+        [Button.url("Support Group", url="https://t.me/TonyStarkBotzXSupport")],
     ]
     await gagan.send_file(
         event.chat_id,
@@ -114,7 +114,7 @@ TEXT = "Hey! I am Advance Content Saver Bot, do login in bot by /login and start
 
 M = "/plan"
 PREMIUM_PIC = "plan.png"
-PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).
+PRE_TEXT = """💰 **Premium Price**: Starting from $1 or 50 INR accepted via **__UPI__** (terms and conditions apply).
 📥 **Download Limit**: Users can download up to 100 files in a single batch command.
 🛑 **Batch**: You will get two modes /bulk and /batch.
    - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n
@@ -125,7 +125,7 @@ PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via *
 async def plan_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
+        [Button.url("Buy from here", url="https://t.me/Tony_Stark_75")]
     ]
 
     # Sending photo with caption and buttons
@@ -148,8 +148,8 @@ TERM_TEXT = """📜 **Terms and Conditions** 📜\n
 async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Query?", url="https://t.me/ttonehelpbot"),
-         Button.url("Channel", url="https://telegram.dog/devggn")]
+        [Button.url("Query?", url="https://t.me/TonyStarkBotzXSupport"),
+         Button.url("Channel", url="https://telegram.dog/TonyStark_Botz")]
     ]
 
     # Sending photo with caption and buttons
